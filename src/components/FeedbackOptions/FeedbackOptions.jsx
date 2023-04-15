@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { ButtonList, Button } from "./FeedbackOptions.styled"
 export const FeedbackOptions = ({ getGoodFeedback, getBadFeedback, getNeutralFeedback }) => {
     return (
-        <ButtonList>
+        <ButtonList>          
             <Button onClick={getGoodFeedback}>Good</Button>  
             <Button onClick={getBadFeedback}>Bad</Button> 
             <Button onClick={getNeutralFeedback}>Neutral</Button> 
@@ -11,8 +11,9 @@ export const FeedbackOptions = ({ getGoodFeedback, getBadFeedback, getNeutralFee
 }
 
 FeedbackOptions.propTypes = {
-    getGoodFeedback: PropTypes.func.isRequired,
-    getBadFeedback: PropTypes.func.isRequired,
-    getNeutralFeedback: PropTypes.func.isRequired,
+    getGoodFeedback: PropTypes.func,
+    getBadFeedback: PropTypes.func,
+    getNeutralFeedback: PropTypes.func,
 }
 
+ 

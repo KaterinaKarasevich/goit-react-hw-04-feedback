@@ -9,6 +9,7 @@ import styled from "@emotion/styled";
   margin-bottom: 20px;`
 
 const Button = styled.li`
+
   padding: 6px 22px;
   display: inline-block;
   border: 1px solid blue;
